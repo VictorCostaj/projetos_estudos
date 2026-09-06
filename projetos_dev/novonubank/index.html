@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+3:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="">
+
+    <!--=========================== SCRIPTS =======================-->
+    <script src="JS/svg-inject.min.js"></script>
+</head>
+
+<body>
+    <!-----------HEADER------------------>
+    <header id="header">
+        <!-----------NAVBAR MOBILE------------------>
+        <nav class="navbar-mobile">
+            <div class="bx" id="bx"></div>
+            <div class="logo">
+                <a href="">
+                    <img src="svg/logonu.svg" alt="" onload="SVGInject(this)">
+                </a>
+            </div>
+            <a href="">Login</a>
+        </nav>
+
+        <!-----------NAVBAR DESKTOP------------------>
+        <nav class="navbar-desktop">
+            <div class="navbar-desktop-item-1">
+                <div class="logo">
+                    <a href="">
+                        <img src="svg/logonu.svg" alt="" onload="SVGInject(this)"></a>
+                </div>
+                <ul class="menu-desktop">
+                    <!---------------menu-item--1------------------ -->
+                    <li class="menu-item" id="menu-item-1">
+                        <a href="" class="nav-link-desktop">Nubank</a>
+                        <ul class="dropdown-menu" id="dropdown-item-1">
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">O Nu</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Carreiras</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Imprensa</a></li>
+                        </ul>
+                    </li>
+                    <!---------------menu-item--2------------------ -->
+                    <li class="menu-item" id="menu-item-2">
+                        <a href="" class="nav-link-desktop">Conta digital</a>
+                        <ul class="dropdown-menu" id="dropdown-item-2">
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Crie sua conta</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Transferências</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Rendimento</a></li>
+                        </ul>
+                    </li>
+                    <!---------------menu-item--3------------------ -->
+                    <li class="menu-item" id="menu-item-3">
+                        <a href="" class="nav-link-desktop">Pra você</a>
+                        <ul class="dropdown-menu" id="dropdown-item-3">
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Comunidade</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Rowards</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link-dropdown">Novidades</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-desktop-item-2">
+                <a href="" class="btn mr-2">Quero ser Nubank</a>
+                <a href="">Login</a>
+            </div>
+        </nav>
+        <!----------------------------------- MENU MOBILE----------------------------------- -->
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul class="nav-list-mobile">
+                <li class="mb-1"><a href="" class="nav-link-mobile">Nubank</a></li>
+                <li class="mb-1"><a href="" class="nav-link-mobile">Conta Digital</a></li class="mb-1">
+                <li class="mb-1"><a href="" class="nav-link-mobile">Pra você</a></li class="mb-1">
+                <li class="mb-1"><a href="" class="nav-link-mobile">Quero ser Nubank</a></li class="mb-1">
+                <li class="mb-1"><a href="" class="nav-link-mobile">Redes sociais</a></li>
+
+                <li class="mt-3 flex-center">
+
+                    <!-- ============ Link Facebook ================== -->
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="svg/icon-facebook.svg" alt="" onload="SVGInject(this)" class="mx-1">
+                    </a>
+                    <!-- ============ Link Insta ================== -->
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="svg/icon-instagram.svg" alt="" onload="SVGInject(this)" class="mx-1">
+                    </a>
+
+                    <!-- ============ Link Twitter ================== -->
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="svg/icon-twitter.svg" alt="" onload="SVGInject(this)" class="mx-1">
+                    </a>
+
+                    <!-- ============ Link Youtube ================== -->
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="svg/icon-youtube.svg" alt="" onload="SVGInject(this)" class="mx-1">
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ========================= Hero ============================ -->
+    <div class="bg-home">
+        <img src="svg/bg-home.svg" class="svg-bg-home" alt="" onload="SVGInject(this)">
+    </div>
+
+    <main class="container hero py-5">
+        <div class="flex-item-1 py-3 mr-3">
+            <h1>Ser Nubank é reiventar sua vida financeira</h1>
+            <p class="my-2">Conta com rendimento acima da poupança, cartão de crédito sem anunidade e o melhor: resolva
+                tudo pelo
+                App.</p>
+            <div class="flex-start">
+                <a href="" class="btn">Quero ser Nubank</a>
+
+                <a href="" class="">
+                    <img src="svg/appstore.svg" class="ml-2" alt="" onload="SVGInject(this)">
+                </a>
+                <a href="" class="">
+                    <img src="svg/playstore.svg" class="ml-2" alt="" onload="SVGInject(this)">
+                </a>
+            </div>
+        </div>
+        <!-- sempre flex item é filho -->
+
+        <div class="flex-item-3 div-card py-4 flex-center ">
+            <img src="svg/icon-card.svg" class="icon-card-hero dropshadow" alt="" onload="SVGInject(this)">
+            <img src="svg/icon-mobile.svg" class="icon-mobile-hero dropshadow" alt="" onload="SVGInject(this)">
+            <img src="svg/icon-contactless.svg" class="icon-contactless-hero dropshadow" alt=""
+                onload="SVGInject(this)">
+            <div class="card"></div>
+        </div>
+    </main>
+
+    <!-- Section people -->
+
+    <section class="container">
+        <div class="flex-item-4 flex-column">
+            <h5>Para todos</h5>
+            <h2>Completo</h2>
+            <p>Resolva seu dia a dia pelo celular. Sem filas, sem anuidade, sem tarifas abusivas. Cuide do seu dinheiro
+                de um jeito simples. Somos eficientes para você usar seu dinheiro com o que realmente importa, sem
+                tarifas de manutenção.
+            </p>
+            <ul class="list mt-2 ">
+                <li class="list-item bg-icon-check">
+                    <strong>100% gratuito</strong>
+                    <p>Isso mesmo, você não paga para abrir sua conta.</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <strong>Sem taxas ou cobranças</strong>
+                    <p>Não se preocupe com taxas adicionais ou anuidades.</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <strong>O melhor suporte de todos</strong>
+                    <p>Segundo pesquisas, temos o melhor suporte para você</p>
+                </li>
+            </ul>
+            <p>
+                <a href="" class="link">Confira os benefícios</a>
+            </p>
+
+
+        </div>
+        <div class="flex-item-3">
+            <img src="svg/svg-people1.svg" alt="" onload="SVGInject(this)">
+        </div>
+        <div class="flex-item-1 flex-column">
+            <img src="svg/svg-people2.svg" id="people2" alt="" onload="SVGInject(this)">
+            <img src="svg/svg-people3.svg" alt="" onload="SVGInject(this)">
+        </div>
+    </section>
+
+
+
+    <script src="./JS/srcipt.js"></script>
+</body>
+
+</html>
+
+<!-- 06:31 - Section 19 - Section People -->

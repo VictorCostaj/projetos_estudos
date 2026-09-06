@@ -1,0 +1,260 @@
+.dropshadow {
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-mobile {
+  &::after {
+    background-image: url("../svg/icon-mobile.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-card {
+  &::after {
+    background-image: url("../svg/icon-card.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-check {
+  &::after {
+    background-image: url("../svg/icon-check.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    width: 40px;
+    height: 40px;
+    top: 16px;
+    left: 8px;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-arrow {
+  &::after {
+    background-image: url("../svg/icon-arrow.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-cash {
+  &::after {
+    background-image: url("../svg/icon-cash.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-config {
+  &::after {
+    background-image: url("../svg/icon-config.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-contactless {
+  &::after {
+    background-image: url("../svg/icon-contactles.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-facebook {
+  &::after {
+    background-image: url("../svg/icon-facebook.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-instagram {
+  &::after {
+    background-image: url("../svg/icon-instagram.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-phone {
+  &::after {
+    background-image: url("../svg/icon-phone.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-time {
+  &::after {
+    background-image: url("../svg/icon-time.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-transfer {
+  &::after {
+    background-image: url("../svg/icon-transfer.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-twitter {
+  &::after {
+    background-image: url("../svg/icon-twitter.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bg-icon-youtube {
+  &::after {
+    background-image: url("../svg/icon-youtube.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}

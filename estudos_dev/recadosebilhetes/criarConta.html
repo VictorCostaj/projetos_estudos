@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+  <title>Criar Conta</title>
+</head>
+
+<body class="bg-dark">
+  <main class="container">
+    <section class="row d-flex justify-content-center">
+      <div class="col-sm-12">
+        <img src="" alt="">
+      </div>
+
+      <div class="col-sm-12 col-lg-5 shadow-lg my-auto px-3 py-5 rounded">
+        <div class="">
+          <h3 class="mt-5">Criar Conta</h3>
+        </div>
+        <div class="container">
+          <div class="alert alert-danger" role="alert" hidden id="msgError1"></div>
+          <div class="alert alert-success" role="alert" id="msgSuccess"></div>
+
+          <form class="row g-3 needs-validation" novalidate id="formCadastro">
+            <div class="col-xs-10">
+              <label class="mt-2" id="labelEmailUser" for="emailUser">Email</label>
+              <input id="emailUser" name="emailUser" class="form-control" type="text" placeholder="joao@gmail.com"
+                required />
+            </div>
+
+            <div class="col-xs-10">
+              <label class="mb-0 p-0" id="labelPasswordUser" for="passwordUser">Senha</label>
+              <input id="passwordUser" name="passwordUser" class="form-control" type="password" required />
+            </div>
+
+            <div class="col-xs-10">
+              <label id="labelConfirmPassword" for="confirmPassword">Confirmar senha</label>
+              <input id="confirmPassword" name="confirmPassword" class="form-control" type="password" required />
+            </div>
+
+            <div class="d-inline-flex p-2 justify-content-around">
+              <div>
+                <button class="btn btn-warning border-4" type="submit" id="salvarUsuario">Criar conta</button>
+              </div>
+              <div>
+                <button type="button" onclick="document.location.href = 'index.html'"
+                  class="btn btn-warning">Inicio</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/js/criarConta.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/criarConta.js"></script>
+</body>
+
+</html>

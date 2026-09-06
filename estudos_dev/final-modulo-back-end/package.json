@@ -1,0 +1,16 @@
+{
+  "name": "final-modulo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "sucrase": "^3.32.0"
+  }
+}

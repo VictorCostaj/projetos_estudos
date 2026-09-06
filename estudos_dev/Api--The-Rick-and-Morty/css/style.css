@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .page-link,
+    .input-group-lg>.btn,
+    .input-group-lg>.form-control,
+    .input-group-lg>.form-select,
+    .input-group-lg>.input-group-text {
+
+        font-size: 0.875rem;
+
+    }
+
+    .text-copyright {
+        font-size: 0.65rem;
+    }
+}
+
+@media (min-width: 750px) {
+    div.input-group {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    .card {
+        max-width: 352px;
+    }
+
+    .espaco-card {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .espaco-margin-vazio {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 500px) {
+    .espaco-margin-vazio {
+        margin-bottom: 150px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    .espaco-margin-vazio {
+        margin-bottom: 200px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+    .espaco-margin-vazio {
+        margin-bottom: 250px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+    .espaco-margin-vazio {
+        margin-bottom: 300px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .espaco-margin-vazio {
+        margin-bottom: 600px;
+    }
+}

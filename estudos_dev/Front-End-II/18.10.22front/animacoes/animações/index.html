@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANIMATION</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: blue;
+        animation-name: divAnimada; /*mapea a animação*/
+        animation-duration: 5s; /*tempo de execução*/
+        animation-delay: 2s; /*tempo de inicio*/
+        animation-timing-function: cubic-bezier(0.20, -1.5, 0.32, 1); /*tempo do efeito de execução*/
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite; /*quantidade de vezes que vai ser feito o efeito*/
+      }
+      @keyframes divAnimada {
+        0% {
+          left: 0px;
+          top: 0px;
+          background-color: black;
+        }
+        25% {
+          left: 100px;
+          top: 0;
+          background-color: black;
+          border-left: 50%;
+        }
+        50% {
+          left: 100px;
+          top:100px;
+          background-color: black;
+          border-right: 50%;
+        }
+        100%{
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

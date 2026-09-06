@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+  <title>Sistema de recados</title>
+</head>
+
+<body class="bg-dark">
+  <main class="container">
+    <section class="row d-flex justify-content-between">
+      <div class="col-sm-12 col-lg-5">
+        <img class="img-fluid" src="./assets/images/new-message-animate.svg" alt="imagem-celular-recados"></img>
+      </div>
+      <div class="col-sm-12 col-lg-5 shadow-lg my-auto px-3 py-5 rounded">
+        <div class="container">
+          <!--ALERTS-->
+          <div class="alert alert-danger" role="alert" hidden id="msgError">
+            <strong>Ops!</strong> Usuário não cadastrado, clique em fazer cadastro.
+          </div>
+          <div class="alert alert-danger" role="alert" hidden id="msgErrornaSenha">
+            <strong>E-mail e senha não correspondem</strong>
+          </div>
+
+          <form class="row g-3" id="form">
+            <div class="col-xs-10">
+              <div class="container-legend">
+                <div class="estatico">Sistema de</div>
+                <ul class="dinamico">
+                  <li><span>Recados</span></li>
+                  <li><span>Registre</span></li>
+                  <li><span>Atualize</span></li>
+                  <li><span>os</span></li>
+                </ul>
+              </div>
+              <label for="validationEmail" class="form-label"> E-mail</label>
+              <input id="user" type="email" class="form-control" placeholder="E-mail" required />
+            </div>
+
+            <div class="col-xs-10">
+              <label for="validationSenha" class="form-label">Senha</label>
+              <input id="password" class="form-control" type="password" placeholder="Senha" required />
+            </div>
+
+            <div class="d-inline-flex p-2 justify-content-around">
+              <div>
+                <button class="btn btn-warning" id="entrar" type="submit">Entrar</button>
+              </div>
+              <div>
+                <button type="button" onclick="document.location.href = 'criarConta.html'" class="btn btn-warning"
+                  id="criarConta">
+                  Criar Conta
+                </button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Sistema de recados</title>
+</head>
+
+<body>
+  <main>
+    <section id="container">
+      <div class="divEsquerda">
+        <img src="./images/messenger-animate.svg" alt="">
+      </div>
+      <div class="divDireita">
+        <fieldset id="fieldset" class="card">
+          <small id="msgError"></small>
+          <br>
+          <br>
+          <form id="form">
+            <legend>Sistema de recados</legend>
+            <input id="user" class="inputs" type="text" placeholder="E-mail" required />
+
+            <input id="password" class="inputs" type="password" placeholder="Senha" required />
+            <br />
+            <button id="entrar" type="submit">ENTRAR</button>
+            <br />
+
+            <button id="criarConta">
+              <a href="./criarConta.html">CRIAR CONTA </a>
+            </button>
+          </form>
+        </fieldset>
+      </div>
+    </section>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

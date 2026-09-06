@@ -1,0 +1,52 @@
+h1 {
+  font-size: 14vh;
+  font-family: "Shadows Into Light", cursive !important;
+  color: #0ef76f;
+  -webkit-text-stroke:0.3vw #383d52;
+}
+
+h1::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #0ef76f;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #0ef76f;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width: 0;
+    }
+     70%{
+        width: 100%;
+    }
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #252525 !important;
+}
+
+.input-group-text {
+  background-color: #ffff;
+  border: var(--bs-border-width) solid #3a3a3a;
+  cursor: pointer;
+}
+
+.form-control {
+  border: var(--bs-border-width) solid #3a3a3a;
+  border-right-width: 0;
+}
+
+.form-control:focus {
+  border-color: #3a3a3a;
+  border-right-width: 0;
+  box-shadow: 0 0 0 0;
+}
+
+

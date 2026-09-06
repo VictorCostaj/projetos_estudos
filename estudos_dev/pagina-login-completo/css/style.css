@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(77, 69, 2);
+  display: flex;
+  justify-content: center; /*justifcar conteúdo - valor centralizar - centro horizontal da tela*/
+  align-items: center; /*alinhar itens - campos centralizados verticalmente*/
+  height: 100vh; /* altura  - body todo espaço da tela 100vh - altura da janela de visualização - 
+  valor 0 nada na página, 50 metade e 100 toda a tela*/
+}
+form {
+  width: 300px;
+}
+
+label {
+  color: #ffff;
+}
+input {
+  border: none;
+}
+input,
+button {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: -webkit-fill-available; /*preencha o espaço disponivel*/
+}
+
+.clear {
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+}
+button {
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.solid {
+  background-color: antiquewhite;
+  border: none;
+  color: rgba(0, 0, 255, 0.308);
+}
+
+.outline {
+  background: transparent;
+  color: aliceblue;
+  border: 1px solid #ffff;
+}

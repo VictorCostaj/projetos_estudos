@@ -1,0 +1,341 @@
+header {
+  width: 100%;
+  height: 72px;
+  background-color: transparent;
+  box-shadow: none;
+
+  position: fixed;
+  z-index: 999;
+}
+
+.active-header {
+  background-color: $white-normal;
+  box-shadow: 0px 2.31px 3.62px 0px rgba(169, 80, 196, 0.03);
+  box-shadow: 0px 6.39px 10.02px 0px rgba(169, 80, 196, 0.04);
+  box-shadow: 0px 15.38px 24.12px 0px rgba(169, 80, 196, 0.05);
+  box-shadow: 0px 51px 80px 0px rgba(169, 80, 196, 0.08);
+}
+
+.navbar-desktop {
+  // display: block;
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 10px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 800;
+}
+
+.navbar-desktop-item-1 {
+  flex: 1 1 auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-desktop-item-2 {
+  flex: 1 1 auto;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-desktop {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .menu-item {
+    position: relative;
+    margin-left: 16px;
+  }
+}
+
+.nav-link-desktop {
+  display: inline-block;
+  padding: 12px 16px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 42%;
+    right: -3px;
+
+    width: 7px;
+    height: 7px;
+
+    transform: rotate(45deg);
+    border-radius: 1px;
+    transition: 0.4s linear;
+
+    border-bottom: 2px solid $primary-normal;
+    border-right: 2px solid $primary-normal;
+  }
+
+  &:hover {
+    &::after {
+      top: 45%;
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: $white-light;
+  border-radius: 16px;
+
+  padding: 16px 24px;
+
+  box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08),
+    0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271),
+    0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04),
+    0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729);
+
+  list-style: none;
+  position: absolute;
+  top: 48px;
+  left: 24px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  // desaparecer dropdown
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 0.7s ease;
+
+  .dropdown-item {
+    width: 100%;
+  }
+}
+
+.active-dropdown-menu {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.nav-link-dropdown {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 16px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transition: 0.5s ease;
+
+    width: 0%;
+    height: 2px;
+
+    background-color: $secondary-normal;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+//mobile
+.navbar-mobile {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 10px 24px;
+
+  // tem que estar invisível
+  display: none;
+
+  @include responsive(s) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/*Esse aqui é o icone bx que no mobile faz X (Menu hambuguer)*/
+.bx {
+  width: 36px;
+  height: 36px;
+
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+
+  &::after {
+    content: "";
+    position: absolute; //manipular livremente a posição
+    top: 40%;
+    left: 17%;
+
+    width: 70%;
+    height: 2px;
+    transition: 0.7s ease;
+
+    background-color: $primary-normal;
+  }
+  &::before {
+    content: "";
+    position: absolute; //manipular livremente a posição
+    top: 64%;
+    left: 17%;
+
+    width: 70%;
+    height: 2px;
+    transition: 0.7s ease;
+
+    background-color: $primary-normal;
+  }
+}
+
+// aqui no active alteramos o top para 50% e adicionamos o transform
+//quando clicar, vamos fazer o toogle do bx para classe active-bx junto com menu mobile.
+
+.active-bx {
+  width: 36px;
+  height: 36px;
+
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+
+  &::after {
+    content: "";
+    position: absolute; //manipular livremente a posição
+    top: 50%;
+    left: 17%;
+
+    transform: rotate(-135deg);
+
+    width: 70%;
+    height: 2px;
+
+    background-color: $primary-normal;
+  }
+  &::before {
+    content: "";
+    position: absolute; //manipular livremente a posição
+    top: 50%;
+    left: 17%;
+
+    width: 70%;
+    height: 2px;
+
+    transform: rotate(315deg);
+
+    background-color: $primary-normal;
+  }
+}
+
+//Na versão desktop vai ficar 'none' ou seja escondido
+
+.menu-mobile {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $white-normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //   ativa e desativa
+  opacity: 0;
+  pointer-events: none;
+
+  transform: translate3d(
+    0,
+    -100px,
+    0
+  ); // faz com que o bloco de link suba um pouco
+  transition: 1s ease;
+}
+
+.active-menu-mobile {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav-list-mobile {
+  max-width: $container-xl;
+  list-style: none; /*tira as bolinhas*/
+
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    width: 36px;
+    height: 36px;
+
+    path {
+      stroke: $gray-7;
+      transition: .7s ease;
+    }
+
+    &:hover {
+      path {
+        stroke: $primary-normal;
+      }
+    }
+  }
+}
+
+// Aqui é o efeito do link mobile com aquela barrinha ao passar o mouse e a sua tipografia
+
+.nav-link-mobile {
+  display: inline-block;
+  // coloca o titulo font 1 / titulos
+  @include typeface-1(h3, desktop);
+  color: $gray-2;
+
+  padding: 16px 24px;
+
+  position: relative; //para poder fazer a manipulação do after para efeito da barra ao passar o mouse
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 90%; //fica na parte de baixo da escrita
+    left: 16px;
+
+    width: 0%;
+    height: 2px;
+    transition: 1s ease;
+
+    background-color: $secondary-normal;
+  }
+
+  &:hover {
+    color: $primary-normal;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}

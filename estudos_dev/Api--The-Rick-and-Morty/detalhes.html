@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Rick and Morty API</title>
+
+    <!-- FONT POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- ICONS BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS APP -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/detalhes.css">
+  </head>
+
+  <body>
+    <header class="container-fluid bg-body-tertiary mb-5">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/RICK_MORTY_ICON-01.svg"
+              alt="Bootstrap"
+              width="80"
+            />
+          </a>
+        </div>
+      </nav>
+
+      <div class="row text-center g-4 p-3 p-sm-5">
+        <!-- TITULO-->
+        <div class="col-12">
+          <h1 class="fw-semibold">The Rick and Morty API</h1>
+        </div>
+
+        <!-- INPUT-->
+        <div class="col-12 d-flex justify-content-center">
+          <div class="input-group mb-3 input-group-lg">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Pesquisar"
+              aria-label="Pesquisar"
+              aria-describedby="basic-addon1"
+            />
+
+            <span class="input-group-text" id="basic-addon1">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CARDS E PAGINACAO -->
+    <main class="container-fluid pb-2 bg-color-main">
+      <div class="container">
+        <!-- LISTAGEM DOS CARDS -->
+        <div class="row g-5" id="espaco-cards">
+          <!-- FIXO -->
+          <!-- <div class="col-12 col-md-6 col-lg-4">
+            <!-- <div class="card w-100">
+              <img
+                src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                class="card-img-top"
+                alt="Avatar"
+              />
+              <div class="card-body px-4" id="cardContainer">
+                <h5 class="card-title">Nome Personagem FIXO</h5>
+
+                <p class="card-text">
+                  <span class="text-danger">
+                    <i class="bi bi-caret-right-fill"></i>
+                  </span>
+                  Vivo - Humano
+                </p>
+
+                <dl>
+                  <dt>Última localização conhecida:</dt>
+                  <dd>Planeta XPTO</dd>
+
+                  <dt>Visto a última vez em:</dt>
+                  <dd>Nome do Capitulo</dd>
+                </dl>
+              </div>
+            </div> --> -->
+          </div>
+        </div>
+
+        <!-- PAGINACAO-->
+        <div class="row mt-5">
+          <div class="col-12 d-flex justify-content-center">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item" id="botao-prev">
+                  <a class="page-link" href="./index.html">
+                    <i class="bi bi-chevron-compact-left"></i>
+                    Voltar
+                  </a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="container-fluid bg-body-tertiary text-center fw-semibold pt-5"
+    >
+      <div class="row text-uppercase">
+        <div class="col-12 offset-lg-3 col-lg-2">
+          <p>
+            Personagens:
+            <span id="qtd-personagens">XX</span>
+          </p>
+        </div>
+        <div class="col-12 col-lg-2">
+          <p>
+            Localizações:
+            <span>XX</span>
+          </p>
+        </div>
+        <div class="col-12 col-lg-2">
+          <p>
+            Episódios:
+            <span>XX</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5 pt-5">
+        <div class="col-12">
+          <p class="text-copyright">
+            <small>
+              Desenvolvido por:
+              <strong class="text-info">Nome do Desenvolvedor</strong>
+              em 2023.
+            </small>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CDN AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- CDN BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS APP -->
+    <script src="./js/detalhes.js"></script>
+  </body>
+</html>
